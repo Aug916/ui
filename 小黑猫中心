@@ -27,6 +27,35 @@ task.delay(3, function()
     end
     screenGui:Destroy()
 end)
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "NotificationUI"
+screenGui.Parent = playerGui
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(0, 300, 0, 50)
+textLabel.Position = UDim2.new(0.5, -150, 0.1, 0)
+textLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+textLabel.TextScaled = true
+textLabel.Text = "qq群:1073948738"
+textLabel.Parent = screenGui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 10)
+corner.Parent = textLabel
+
+task.delay(3, function()
+    for i = 1, 30 do
+        textLabel.TextTransparency = i / 30
+        textLabel.BackgroundTransparency = i / 30
+        task.wait(0.05)
+    end
+    screenGui:Destroy()
+end)
 local LBLG = Instance.new("ScreenGui")
 local LBL = Instance.new("TextLabel")
 local PlayerLabel = Instance.new("TextLabel")
@@ -1897,30 +1926,23 @@ about:Button("旋转250", function()
     velocity.Name = "Spinbot"
 end)
 
-local about = UITab8:section("『小黑猫☆自然灾害』", true)
-about:Label("检测到你当前的服务器不是☆自然灾害☆")
-about:Label("亲爱的挽脚本通用源码用户")
-about:Label("请到自然灾害执行脚本 会加载对应功能")
+local about = UITab8:section("『Doors脚本』",true)
 
-local about = UITab9:section("『小黑猫☆力量传奇』", true)
-about:Label("检测到你当前的服务器不是☆力量传奇☆")
-about:Label("亲爱的挽脚本通用源码用户")
-about:Label("请到力量传奇执行脚本 会加载对应功能")
+about:Button("msdoors汉化", function()
+loadstring(game:HttpGet("https://msdoors.vercel.app/script"))()
+end)
 
-local about = UITab10:section("『小黑猫☆极速传奇』", true)
-about:Label("检测到你当前的服务器不是☆极速传奇☆")
-about:Label("亲爱的挽脚本通用源码用户")
-about:Label("请到极速传奇执行脚本 会加载对应功能")
+local about = UITab9:section("『墨水游戏』",true)
 
-local about = UITab11:section("『小黑猫☆忍者传奇』", true)
-about:Label("忍者传奇更新中")
+about:Button("墨水游戏(绕过反作弊)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/inkgame.lua", true))()
+end)
 
-local about = UITab12:section("『小黑猫☆战争大亨』", true)
-about:Label("检测到你当前的服务器不是☆战争大亨☆")
-about:Label("亲爱的挽脚本通用源码用户")
-about:Label("请到战争大亨执行脚本 会加载对应功能")
+local about = UITab10:section("『刀刃球』", true)
+about:Label("此次更新")
 
-local about = UITab13:section("『小黑猫☆刀刃球』", true)
-about:Label("刀球刃更新中")
+about:Button("刀刃球", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/atnew2025/Chinese-scripts/refs/heads/main/Argonhub-cn.txt"))()
+end)
 
 game:GetService("StarterGui"):SetCore("SendNotification",{Title="欢迎使用";Text="ui库加载成功喵";Icon="rbxassetid://114514";Duration=3;})
