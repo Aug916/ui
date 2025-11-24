@@ -89,9 +89,8 @@ Heartbeat:Connect(HeartbeatUpdate)
  
 game:GetService("StarterGui"):SetCore("SendNotification",{Title="提示";Text="小黑猫中心ovo\n请等待1-12秒喵";Icon="rbxassetid://114514";Duration=3;})
  
- -- 这是我的公开UI库（挽脚本）
 local success, ui = pcall(function()
-return loadstring(game:HttpGet("https://raw.githubusercontent.com/3345179204-sudo/-/refs/heads/main/UI%E5%BA%93", true))()
+return loadstring(game:HttpGet("https://raw.githubusercontent.com/dream77239/xiaohei/refs/heads/main/UI%E5%BA%93.txt", true))()
 end)
 if not success then
 game:GetService("StarterGui"):SetCore("SendNotification",{Title="小黑猫中心";Text="UI库加载失败";Icon="rbxassetid://114514";Duration=5;})
@@ -126,8 +125,9 @@ local UITab7 = win:Tab("『旋转』",'114514')
 local UITab8 = win:Tab("『Doors』",'114514')
 local UITab9 = win:Tab("『墨水游戏』",'114514')
 local UITab10 = win:Tab("『刀刃球』",'114514')
+local UITab11 = win:Tab("『Rb脚本中心破解版』",'114514')
 local UITab11 = win:Tab("『敬请期待』",'114514')
- 
+
 local about = UITab1:section("『公告』",true)
 local function RainbowFont(label)
 local hue = 0
@@ -1908,10 +1908,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/m
 end)
 
 local about = UITab10:section("『刀刃球』", true)
-about:Label("此次更新")
 
 about:Button("刀刃球", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/atnew2025/Chinese-scripts/refs/heads/main/Argonhub-cn.txt"))()
+end)
+
+local about = UITab11:section("『Rb脚本中心破解版』",true)
+about:Label("此次更新")
+about:Label("因破解性质,可能会失效:)")
+
+about:Button("Rb脚本中心破解版", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Aug916/ui/refs/heads/main/Rb%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%83%E7%A0%B4%E8%A7%A3%E7%89%88"))()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification",{Title="欢迎使用";Text="ui库加载成功喵";Icon="rbxassetid://114514";Duration=3;})
