@@ -12,35 +12,6 @@ textLabel.Position = UDim2.new(0.5, -150, 0.1, 0)
 textLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 textLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 textLabel.TextScaled = true
-textLabel.Text = "UI正在加载中,请等待"
-textLabel.Parent = screenGui
-
-local corner = Instance.new("UICorner")
-corner.CornerRadius = UDim.new(0, 10)
-corner.Parent = textLabel
-
-task.delay(3, function()
-    for i = 1, 30 do
-        textLabel.TextTransparency = i / 30
-        textLabel.BackgroundTransparency = i / 30
-        task.wait(0.05)
-    end
-    screenGui:Destroy()
-end)
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
-local playerGui = player:WaitForChild("PlayerGui")
-
-local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "NotificationUI"
-screenGui.Parent = playerGui
-
-local textLabel = Instance.new("TextLabel")
-textLabel.Size = UDim2.new(0, 300, 0, 50)
-textLabel.Position = UDim2.new(0.5, -150, 0.1, 0)
-textLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-textLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-textLabel.TextScaled = true
 textLabel.Text = "qq群:1073948738"
 textLabel.Parent = screenGui
 
@@ -152,12 +123,10 @@ local UITab4 = win:Tab("『传送+甩飞』",'114514')
 local UITab5 = win:Tab("『FE』",'114514')
 local UITab6 = win:Tab("『ESP』",'114514')
 local UITab7 = win:Tab("『旋转』",'114514')
-local UITab8 = win:Tab("『自然灾害』",'114514')
-local UITab9 = win:Tab("『力量传奇』",'114514')
-local UITab10 = win:Tab("『极速传奇』",'114514')
-local UITab11 = win:Tab("『忍者传奇』",'114514')
-local UITab12 = win:Tab("『战争大亨』",'114514')
-local UITab13 = win:Tab("『刀球刃』",'114514')
+local UITab8 = win:Tab("『Doors』",'114514')
+local UITab9 = win:Tab("『墨水游戏』",'114514')
+local UITab10 = win:Tab("『刀刃球』",'114514')
+local UITab11 = win:Tab("『敬请期待』",'114514')
  
 local about = UITab1:section("『公告』",true)
 local function RainbowFont(label)
