@@ -15129,7 +15129,7 @@ about:Button("Xi脚本中心破解版", function()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/87a8a4f4c2d2ef535ccd1bdb949218fe.lua"))()
 end)
 
-local about = UITab12:section("『Kanl脚本旧版』",true)
+local about = UITab13:section("『Kanl脚本旧版』",true)
 about:Label("此次更新")
 about:Label("这玩意儿真是Kanl给我的")
 
