@@ -126,6 +126,7 @@ local UITab8 = win:Tab("『Doors』",'114514')
 local UITab9 = win:Tab("『墨水游戏』",'114514')
 local UITab10 = win:Tab("『刀刃球』",'114514')
 local UITab11 = win:Tab("『Rb脚本中心破解版』",'114514')
+local UITab11 = win:Tab("『Xi脚本破解版』",'114514')
 local UITab11 = win:Tab("『敬请期待』",'114514')
 
 local about = UITab1:section("『公告』",true)
@@ -629,9 +630,9 @@ about:Textbox("自定义范围", "HitBox", "输入", function(Value)
                 end)
             end 
         end
-        game:GetService("StarterGui"):SetCore("SendNotification",{Title="通用源码";Icon="rbxassetid://114514";Text="范围已设置喵";Duration=3;})
+        game:GetService("StarterGui"):SetCore("SendNotification",{Title="挽脚本通用源码";Icon="rbxassetid://114514";Text="范围已设置喵";Duration=3;})
     else
-        game:GetService("StarterGui"):SetCore("SendNotification",{Title="通用源码";Icon="rbxassetid://114514";Text="请输入数字喵";Duration=3;})
+        game:GetService("StarterGui"):SetCore("SendNotification",{Title="挽脚本通用源码";Icon="rbxassetid://114514";Text="请输入数字喵";Duration=3;})
     end
 end)
 
@@ -648,7 +649,7 @@ about:Button("关闭范围", function()
             end)
         end
     end
-    game:GetService("StarterGui"):SetCore("SendNotification",{Title="通用源码";Icon="rbxassetid://114514";Text="范围关闭了喵";Duration=3;})
+    game:GetService("StarterGui"):SetCore("SendNotification",{Title="挽脚本通用源码";Icon="rbxassetid://114514";Text="范围关闭了喵";Duration=3;})
 end)
 
 about:Button("彩虹", function()
@@ -675,7 +676,7 @@ about:Button("彩虹", function()
             end 
         end
     end)
-    game:GetService("StarterGui"):SetCore("SendNotification",{Title=通用源码";Icon="rbxassetid://114514";Text="彩虹已启用喵";Duration=3;})
+    game:GetService("StarterGui"):SetCore("SendNotification",{Title="挽脚本通用源码";Icon="rbxassetid://114514";Text="彩虹已启用喵";Duration=3;})
 end)
 
 local about = UITab3:section("『快速调』",true)
@@ -972,7 +973,7 @@ about:Button("甩飞一次选中的人", function()
     local Player = game:GetService("Players").LocalPlayer
     local TargetPlayer = selectedPlayer
     if not TargetPlayer or TargetPlayer == Player then
-        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "通用源码", Text = "无玩家可甩飞", Duration = 2, Icon = "rbxassetid://114514"})
+        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "挽脚本通用源码", Text = "无玩家可甩飞", Duration = 2, Icon = "rbxassetid://114514"})
         return
     end
 
@@ -1020,8 +1021,8 @@ about:Button("甩飞一次选中的人", function()
         if not (Character and Humanoid and RootPart and TCharacter and THumanoid) then
             return Message("挽脚本通用源码", "玩家已趋势", 2)
         end
-        if THumanoid.Sit then return Message("通用源码", "目标处于坐姿", 2) end
-        if not TCharacter:FindFirstChildWhichIsA("BasePart") then return Message("通用源码", "玩家已趋势", 2) end
+        if THumanoid.Sit then return Message("挽脚本通用源码", "目标处于坐姿", 2) end
+        if not TCharacter:FindFirstChildWhichIsA("BasePart") then return Message("挽脚本通用源码", "玩家已趋势", 2) end
 
         if THead then
             workspace.CurrentCamera.CameraSubject = THead
@@ -1910,14 +1911,21 @@ end)
 local about = UITab10:section("『刀刃球』", true)
 
 about:Button("刀刃球", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/atnew2025/Chinese-scripts/refs/heads/main/Argonhub-cn.txt"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/87a8a4f4c2d2ef535ccd1bdb949218fe.lua"))()
 end)
 
 local about = UITab11:section("『Rb脚本中心破解版』",true)
-about:Label("此次更新")
 about:Label("因破解性质,可能会失效:)")
 
 about:Button("Rb脚本中心破解版", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Aug916/ui/refs/heads/main/Rb%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%83%E7%A0%B4%E8%A7%A3%E7%89%88"))()
+end)
+
+local about = UITab11:section("『Xi脚本中心破解版』",true)
+about:Label("此次更新")
+about:Label("因破解性质,可能会失效:)")
+
+about:Button("Xi脚本中心破解版", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Aug916/ui/refs/heads/main/Rb%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%83%E7%A0%B4%E8%A7%A3%E7%89%88"))()
 end)
 
