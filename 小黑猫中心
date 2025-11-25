@@ -629,9 +629,9 @@ about:Textbox("自定义范围", "HitBox", "输入", function(Value)
                 end)
             end 
         end
-        game:GetService("StarterGui"):SetCore("SendNotification",{Title="挽脚本通用源码";Icon="rbxassetid://114514";Text="范围已设置喵";Duration=3;})
+        game:GetService("StarterGui"):SetCore("SendNotification",{Title="通用源码";Icon="rbxassetid://114514";Text="范围已设置喵";Duration=3;})
     else
-        game:GetService("StarterGui"):SetCore("SendNotification",{Title="挽脚本通用源码";Icon="rbxassetid://114514";Text="请输入数字喵";Duration=3;})
+        game:GetService("StarterGui"):SetCore("SendNotification",{Title="通用源码";Icon="rbxassetid://114514";Text="请输入数字喵";Duration=3;})
     end
 end)
 
@@ -648,7 +648,7 @@ about:Button("关闭范围", function()
             end)
         end
     end
-    game:GetService("StarterGui"):SetCore("SendNotification",{Title="挽脚本通用源码";Icon="rbxassetid://114514";Text="范围关闭了喵";Duration=3;})
+    game:GetService("StarterGui"):SetCore("SendNotification",{Title="通用源码";Icon="rbxassetid://114514";Text="范围关闭了喵";Duration=3;})
 end)
 
 about:Button("彩虹", function()
@@ -675,7 +675,7 @@ about:Button("彩虹", function()
             end 
         end
     end)
-    game:GetService("StarterGui"):SetCore("SendNotification",{Title="挽脚本通用源码";Icon="rbxassetid://114514";Text="彩虹已启用喵";Duration=3;})
+    game:GetService("StarterGui"):SetCore("SendNotification",{Title=通用源码";Icon="rbxassetid://114514";Text="彩虹已启用喵";Duration=3;})
 end)
 
 local about = UITab3:section("『快速调』",true)
@@ -972,7 +972,7 @@ about:Button("甩飞一次选中的人", function()
     local Player = game:GetService("Players").LocalPlayer
     local TargetPlayer = selectedPlayer
     if not TargetPlayer or TargetPlayer == Player then
-        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "挽脚本通用源码", Text = "无玩家可甩飞", Duration = 2, Icon = "rbxassetid://114514"})
+        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "通用源码", Text = "无玩家可甩飞", Duration = 2, Icon = "rbxassetid://114514"})
         return
     end
 
@@ -1020,8 +1020,8 @@ about:Button("甩飞一次选中的人", function()
         if not (Character and Humanoid and RootPart and TCharacter and THumanoid) then
             return Message("挽脚本通用源码", "玩家已趋势", 2)
         end
-        if THumanoid.Sit then return Message("挽脚本通用源码", "目标处于坐姿", 2) end
-        if not TCharacter:FindFirstChildWhichIsA("BasePart") then return Message("挽脚本通用源码", "玩家已趋势", 2) end
+        if THumanoid.Sit then return Message("通用源码", "目标处于坐姿", 2) end
+        if not TCharacter:FindFirstChildWhichIsA("BasePart") then return Message("通用源码", "玩家已趋势", 2) end
 
         if THead then
             workspace.CurrentCamera.CameraSubject = THead
