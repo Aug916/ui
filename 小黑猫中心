@@ -12,7 +12,7 @@ textLabel.Position = UDim2.new(0.5, -150, 0.1, 0)
 textLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 textLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 textLabel.TextScaled = true
-textLabel.Text = "qq群:1073948738"
+textLabel.Text = "qq群:1073948738,脚本完全免费"
 textLabel.Parent = screenGui
 
 local corner = Instance.new("UICorner")
@@ -143,13 +143,13 @@ end)
 end
 local versionLabel = about:Label("小黑猫中心")
 RainbowFont(versionLabel)
-local lbl1 = about:Label("部分参考挽脚本")
+local lbl1 = about:Label("参考挽脚本，不要因为这个骂人")
 RainbowFont(lbl1)
 local lbl2 = about:Label("作者qq:2280267699")
 RainbowFont(lbl2)
 local lbl3 = about:Label("赞助者名单")
 RainbowFont(lbl3)
-local lbl4 = about:Label("解卡厨师(这个哥们儿不乘)")
+local lbl4 = about:Label("解卡厨师(这个哥们儿很乘)")
 RainbowFont(lbl4)
 local lbl4 = about:Label("Kanl脚本作者(竟然是大帝)")
 RainbowFont(lbl5)
