@@ -143,7 +143,7 @@ end)
 end
 local versionLabel = about:Label("小黑猫中心")
 RainbowFont(versionLabel)
-local lbl1 = about:Label("参考挽脚本，不要因为这个骂人")
+local lbl1 = about:Label("参考挽脚本，缝合，不要因为这个骂人")
 RainbowFont(lbl1)
 local lbl2 = about:Label("作者qq:2280267699")
 RainbowFont(lbl2)
